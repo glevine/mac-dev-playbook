@@ -1,0 +1,134 @@
+---
+configure_dotfiles: true
+configure_terminal: true
+configure_osx: true
+
+email_address: levine.greg@gmail.com
+
+# dotfiles
+dotfiles_repo: https://github.com/glevine/dotfiles.git
+dotfiles_repo_accept_hostkey: true
+dotfiles_repo_local_destination: ~/github.com/glevine/dotfiles
+dotfiles_files:
+  - .aliases
+  - .gitconfig
+  - .gitignore
+  - .tmux.conf
+  - .vimrc
+  - .zshrc
+
+# Homebrew
+homebrew_installed_packages:
+  - ack
+  - asciinema
+  - awscli
+  - base64
+  - bash
+  - bash-completion
+  - bat
+  - bazelisk
+  - cheat
+  - composer
+  - delve
+  - docker-completion
+  - fzf
+  - gh
+  - git
+  - go
+  - httpie
+  - jq
+  - openlens
+  - openssl
+  - parallel
+  - php
+  - pwgen
+  - pyenv
+  - pyenv-virtualenv
+  - reattach-to-user-namespace
+  - shellcheck
+  - ssh-copy-id
+  - stern
+  - thefuck
+  - tmux
+  - vim
+  - volta
+  - wagoodman/dive/dive
+  - wget
+  - whois
+  - yq
+  - zsh-autosuggestions
+  - zsh-completions
+  - zsh-history-substring-search
+  - zsh-kubectl-prompt
+  - zsh-syntax-highlighting
+
+homebrew_taps:
+  - devhubapp/devhub
+  - homebrew/cask
+  - homebrew/cask-drivers
+  - homebrew/cask-fonts
+  - homebrew/cask-versions
+  - homebrew/command-not-found
+  - homebrew/core
+  - superbrothers/zsh-kubectl-prompt
+  - ykursadkaya/openlens
+
+homebrew_cask_apps:
+  - 1password-cli
+  - authy
+  - dbeaver-community
+  - devhub
+  - docker
+  - drawio
+  - dropbox
+  - firefox
+  - gimp
+  - google-chrome
+  - grammarly
+  - handbrake
+  - keka
+  - lastpass
+  - licecap
+  - netspot
+  - ngrok
+  - onedrive
+  - plex-media-player
+  - postman
+  - sourcetree
+  - sublime-text
+  - visual-studio-code
+  - vlc
+
+# See `geerlingguy.mas` role documentation for usage instructions.
+mas_installed_apps:
+  - { id: 1333542190, name: "1password 7" }
+  - { id: 937984704,  name: "amphetamine" }
+  - { id: 406056744,  name: "evernote" }
+  - { id: 442160987,  name: "flycut" }
+  - { id: 425955336,  name: "skitch" }
+  - { id: 803453959,  name: "slack" }
+  - { id: 747648890,  name: "telegram" }
+  - { id: 497799835,  name: "xcode" }
+mas_email: ""
+mas_password: ""
+
+# macOS
+osx_script: "~/.osx --no-restart"
+
+# Sublime Text
+configure_sublime: true
+sublime_base_path: '~/Library/Application Support/Sublime Text'
+sublime_config_path: "Packages/User"
+sublime_package_control:
+  - "FileDiffs"
+  - "GitHub Flavored Markdown Preview"
+  - "Package Control"
+  - "Pretty JSON"
+  - "TrailingSpaces"
+  - "WordCount"
+
+# Additional tasks.
+post_provision_tasks:
+  - tasks/ssh.yml
+  - tasks/visual-studio-code.yml
+  - tasks/volta.yml

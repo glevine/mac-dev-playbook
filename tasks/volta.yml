@@ -1,0 +1,10 @@
+---
+# Updating volta through homebrew requires `volta setup` to be run.
+# source: https://github.com/volta-cli/volta/issues/927
+- name: Configure Volta.
+  command: volta setup
+- name: Install tools managed by Volta.
+  command: "volta install {{ item }}"
+  loop:
+    - node
+    - yarn
