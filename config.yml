@@ -13,6 +13,7 @@ dotfiles_files:
   - .aliases
   - .gitconfig
   - .gitignore
+  - .osx
   - .tmux.conf
   - .vimrc
   - .zshrc
@@ -73,6 +74,7 @@ homebrew_taps:
   - superbrothers/zsh-kubectl-prompt
   - ykursadkaya/openlens
 
+homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - 1password-cli
   - authy
@@ -100,17 +102,19 @@ homebrew_cask_apps:
   - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-mas_installed_apps:
-  - { id: 1333542190, name: "1password 7" }
-  - { id: 937984704,  name: "amphetamine" }
-  - { id: 406056744,  name: "evernote" }
-  - { id: 442160987,  name: "flycut" }
-  - { id: 425955336,  name: "skitch" }
-  - { id: 803453959,  name: "slack" }
-  - { id: 747648890,  name: "telegram" }
-  - { id: 497799835,  name: "xcode" }
+#mas_installed_apps:
+# - { id: 1333542190, name: "1password 7" }
+# - { id: 937984704,  name: "amphetamine" }
+# - { id: 406056744,  name: "evernote" }
+# - { id: 442160987,  name: "flycut" }
+# - { id: 425955336,  name: "skitch" }
+# - { id: 803453959,  name: "slack" }
+# - { id: 747648890,  name: "telegram" }
+# - { id: 497799835,  name: "xcode" }
 mas_email: ""
 mas_password: ""
+# disabled mas until https://github.com/mas-cli/mas/issues/417#issuecomment-976886424 is fixed
+mas_installed_apps: []
 
 # macOS
 osx_script: "~/.osx --no-restart"
