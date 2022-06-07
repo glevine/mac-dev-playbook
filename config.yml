@@ -57,6 +57,7 @@ homebrew_installed_packages:
   - wget
   - whois
   - yq
+  - zsh
   - zsh-autosuggestions
   - zsh-completions
   - zsh-history-substring-search
