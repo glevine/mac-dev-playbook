@@ -33,6 +33,8 @@
     settings:
       cloudcode.enableMultiSkaffoldConfigsKey: true
       cloudcode.yaml.format.enable: true
+      [dockerfile]:
+        editor.defaultFormatter: ms-azuretools.vscode-docker
       editor.bracketPairColorization.enabled: true
       editor.detectIndentation: false
       editor.formatOnSave: true
