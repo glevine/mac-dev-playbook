@@ -133,7 +133,7 @@ sublime_package_control:
   - "WordCount"
 
 # shortcuts
-shortcuts_repo: https://github.com/glevine/shorcuts.git
+shortcuts_repo: https://github.com/glevine/shortcuts.git
 shortcuts_repo_accept_hostkey: true
 shortcuts_repo_local_destination: ~/github.com/glevine/shortcuts
 

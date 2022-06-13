@@ -2,6 +2,6 @@
 - name: Ensure shortcuts repository is cloned locally.
   git:
     repo: "{{ shortcuts_repo }}"
-    dest: "{{ shorcuts_repo_local_destination }}"
+    dest: "{{ shortcuts_repo_local_destination }}"
     accept_hostkey: "{{ shortcuts_repo_accept_hostkey }}"
   become: false
