@@ -47,4 +47,5 @@
       merge-conflict.diffViewPosition: Below
       python.languageServer: Pylance
       redhat.telemetry.enabled: false
+      terminal.integrated.defaultProfile.osx: zsh
       window.zoomLevel: 1
