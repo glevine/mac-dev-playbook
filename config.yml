@@ -132,9 +132,15 @@ sublime_package_control:
   - "TrailingSpaces"
   - "WordCount"
 
+# shortcuts
+shortcuts_repo: https://github.com/glevine/shorcuts.git
+shortcuts_repo_accept_hostkey: true
+shortcuts_repo_local_destination: ~/github.com/glevine/shortcuts
+
 # Additional tasks.
 post_provision_tasks:
   - tasks/openssl.yml
+  - tasks/shortcuts.yml
   - tasks/ssh.yml
   - tasks/visual-studio-code.yml
   - tasks/volta.yml
