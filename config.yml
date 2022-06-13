@@ -134,6 +134,7 @@ sublime_package_control:
 
 # Additional tasks.
 post_provision_tasks:
+  - tasks/openssl.yml
   - tasks/ssh.yml
   - tasks/visual-studio-code.yml
   - tasks/volta.yml

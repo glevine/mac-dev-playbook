@@ -1,0 +1,3 @@
+---
+- name: Link openssl.
+  command: brew link --force openssl
