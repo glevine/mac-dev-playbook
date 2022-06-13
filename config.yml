@@ -139,6 +139,7 @@ shortcuts_repo_local_destination: ~/github.com/glevine/shortcuts
 
 # Additional tasks.
 post_provision_tasks:
+  - tasks/docker.yml
   - tasks/openssl.yml
   - tasks/shortcuts.yml
   - tasks/ssh.yml

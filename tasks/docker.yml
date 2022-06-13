@@ -1,0 +1,3 @@
+---
+- name: Install buildx as a "docker builder" alias.
+  command: docker buildx install
