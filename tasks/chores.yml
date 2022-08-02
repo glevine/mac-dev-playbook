@@ -8,7 +8,7 @@
 - name: Link chores binary into PATH.
   file:
     src: "{{ chores_repo_local_destination }}/chores"
-    dest: "{{ lookup('env','HOME') }}/bin/chores"
+    dest: /usr/local/bin/chores
     state: link
     mode: 0755
   become: false
