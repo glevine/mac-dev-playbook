@@ -143,6 +143,7 @@ chores_repo_local_destination: ~/github.com/glevine/chores
 
 # Additional tasks.
 post_provision_tasks:
+  - tasks/binaries.yml # must run first
   - tasks/chores.yml
   - tasks/docker.yml
   - tasks/openssl.yml
