@@ -30,13 +30,17 @@ homebrew_installed_packages:
   - bazelisk
   - cheat
   - composer
+  - coreutils
   - delve
   - docker-completion
+  - findutils
   - fzf
   - gh
   - git
+  - gnu-sed
   - go
   - httpie
+  - hugo
   - jq
 #  - openlens
   - openssl
