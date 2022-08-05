@@ -31,7 +31,6 @@ homebrew_installed_packages:
   - cheat
   - composer
   - coreutils
-  - delve
   - docker-completion
   - findutils
   - fzf
