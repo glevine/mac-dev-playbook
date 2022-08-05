@@ -39,9 +39,11 @@ homebrew_installed_packages:
   - git
   - gnu-sed
   - go
+  - helm
   - httpie
   - hugo
   - jq
+  - minikube
 #  - openlens
   - openssl
   - parallel
