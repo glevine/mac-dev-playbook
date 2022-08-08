@@ -33,6 +33,7 @@ homebrew_installed_packages:
   - composer
   - coreutils
   - docker-completion
+  - figlet
   - findutils
   - fzf
   - gh
