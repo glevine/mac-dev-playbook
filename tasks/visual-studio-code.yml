@@ -51,6 +51,8 @@
       go.useLanguageServer: true
       "[go]":
         editor.defaultFormatter: golang.go
+      gopls:
+        formatting.local: github.com/sugarcrm/multiverse
       merge-conflict.diffViewPosition: Below
       python.languageServer: Pylance
       python.linting.enabled: true
