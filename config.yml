@@ -41,6 +41,7 @@ homebrew_installed_packages:
   - git
   - gnu-sed
   - go
+  - graphviz
   - helm
   - httpie
   - hugo
@@ -94,6 +95,7 @@ homebrew_cask_apps:
   - firefox
   - gimp
   - google-chrome
+  - google-drive
   - grammarly
   - handbrake
   - keka
