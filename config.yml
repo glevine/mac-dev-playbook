@@ -150,7 +150,7 @@ doit_repo_local_destination: ~/github.com/glevine/doit
 
 # Additional tasks.
 post_provision_tasks:
-  - tasks/binaries.yml # must run first
+  - tasks/binaries.yml  # must run first
   - tasks/doit.yml
   - tasks/docker.yml
   - tasks/openssl.yml
