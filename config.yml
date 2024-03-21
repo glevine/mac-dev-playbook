@@ -114,7 +114,7 @@ homebrew_cask_apps:
   - vlc
 
 # See `geerlingguy.mas` role documentation for usage instructions.
-#mas_installed_apps:
+# mas_installed_apps:
 # - { id: 1333542190, name: "1password 7" }
 # - { id: 937984704,  name: "amphetamine" }
 # - { id: 406056744,  name: "evernote" }
