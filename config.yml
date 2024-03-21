@@ -143,15 +143,15 @@ sublime_package_control:
   - "TrailingSpaces"
   - "WordCount"
 
-# chores
-chores_repo: https://github.com/glevine/chores.git
-chores_repo_accept_hostkey: true
-chores_repo_local_destination: ~/github.com/glevine/chores
+# doit
+doit_repo: https://github.com/glevine/doit.git
+doit_repo_accept_hostkey: true
+doit_repo_local_destination: ~/github.com/glevine/doit
 
 # Additional tasks.
 post_provision_tasks:
   - tasks/binaries.yml # must run first
-  - tasks/chores.yml
+  - tasks/doit.yml
   - tasks/docker.yml
   - tasks/openssl.yml
   - tasks/ssh.yml

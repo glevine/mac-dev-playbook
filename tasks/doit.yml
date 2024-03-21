@@ -1,0 +1,14 @@
+---
+- name: Ensure doit repository is cloned locally.
+  git:
+    repo: "{{ doit_repo }}"
+    dest: "{{ doit_repo_local_destination }}"
+    accept_hostkey: "{{ doit_repo_accept_hostkey }}"
+  become: false
+- name: Link doit binary into PATH.
+  file:
+    src: "{{ doit_repo_local_destination }}/doit"
+    dest: "{{ lookup('env','HOME') }}/bin/doit"
+    state: link
+    mode: 0755
+  become: false
