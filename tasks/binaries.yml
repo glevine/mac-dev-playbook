@@ -4,5 +4,5 @@
     path: "{{ lookup('env','HOME') }}/bin"
     state: directory
     mode: 0755
-    recurse: yes
+    recurse: true
   become: false
