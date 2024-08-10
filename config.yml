@@ -74,12 +74,7 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - devhubapp/devhub
-  - homebrew/cask
-  - homebrew/cask-drivers
-  - homebrew/cask-fonts
-  - homebrew/cask-versions
   - homebrew/command-not-found
-  - homebrew/core
   - superbrothers/zsh-kubectl-prompt
   - ykursadkaya/openlens
 
