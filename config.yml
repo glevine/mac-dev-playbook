@@ -81,7 +81,6 @@ homebrew_taps:
 homebrew_cask_accept_external_apps: true
 homebrew_cask_apps:
   - 1password-cli
-  - authy
   - dbeaver-community
   - devhub
   - docker
@@ -100,7 +99,7 @@ homebrew_cask_apps:
   - ngrok
   - onedrive
   - openlens
-  - plex-media-player
+  - plex
   - postman
   - sourcetree
   - sublime-text
