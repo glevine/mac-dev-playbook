@@ -22,9 +22,6 @@
     "go.useLanguageServer": true,
     "merge-conflict.diffViewPosition": "Below",
     "python.languageServer": "Pylance",
-    "python.linting.enabled": true,
-    "python.linting.flake8Enabled": true,
-    "python.linting.pylintEnabled": true,
     "redhat.telemetry.enabled": false,
     "terminal.integrated.defaultProfile.osx": "zsh",
     "vs-kubernetes": {
