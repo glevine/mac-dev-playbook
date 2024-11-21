@@ -46,7 +46,9 @@ homebrew_installed_packages:
   - httpie
   - hugo
   - jq
+  - maven
   - minikube
+  - openjdk@17
   - openssl
   - parallel
   - php

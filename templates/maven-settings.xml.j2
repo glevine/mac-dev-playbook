@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<settings xmlns="http://maven.apache.org/SETTINGS/1.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:schemaLocation="http://maven.apache.org/SETTINGS/1.0.0 http://maven.apache.org/xsd/settings-1.0.0.xsd">
+
+    <!--
+  Don't forget to add setting-security.xml so that the password get's decrypted
+  -->
+    <servers>
+        <server>
+            <id>sugarcrm-nexus</id>
+            <username>{{ maven_sugarcrm_nexus_username.user_input }}</username>
+            <password>{{ maven_sugarcrm_nexus_password.user_input }}</password>
+        </server>
+    </servers>
+
+    <!--
+  You might want to tweak the 'updatePolicy' configuration to fit your need on having updated snapshots and
+  releases. Our recommendation is to set it to 'never' and run maven with the '-U' flag when needed.
+  -->
+    <profiles>
+        <profile>
+            <id>sugarcrm-nexus</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+            <repositories>
+                <repository>
+                    <id>sugarcrm-nexus</id>
+                    <name>SugarCRM Nexus</name>
+                    <url>https://nexus.service.sugarcrm.com/repository/cxp-public/</url>
+                    <releases>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </releases>
+                    <snapshots>
+                        <enabled>true</enabled>
+                        <updatePolicy>always</updatePolicy>
+                    </snapshots>
+                </repository>
+            </repositories>
+        </profile>
+    </profiles>
+</settings>

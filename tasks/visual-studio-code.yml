@@ -25,6 +25,7 @@
     - samuelcolvin.jinjahtml
     - snyk-security.snyk-vulnerability-scanner
     - valeryanm.vscode-phpsab
+    - vscjava.vscode-java-pack
     - xdebug.php-debug
     - zxh404.vscode-proto3
 - name: Ensure Visual Studio Code user directory exists.
