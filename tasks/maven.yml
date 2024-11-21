@@ -7,12 +7,12 @@
 - name: Capture sugarcrm-nexus username.
   pause:
     prompt: "Enter your sugarcrm-nexus username"
-    register: maven_sugarcrm_nexus_username
+  register: maven_sugarcrm_nexus_username
 - name: Capture sugarcrm-nexus password.
   pause:
     prompt: "Enter your sugarcrm-nexus password"
     echo: no
-    register: maven_sugarcrm_nexus_password
+  register: maven_sugarcrm_nexus_password
 - name: Install maven settings.
   template:
     src: templates/maven-settings.xml.j2
