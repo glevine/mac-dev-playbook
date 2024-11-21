@@ -148,6 +148,7 @@ post_provision_tasks:
   - tasks/binaries.yml  # must run first
   - tasks/doit.yml
   - tasks/docker.yml
+  - tasks/maven.yml
   - tasks/openssl.yml
   - tasks/ssh.yml
   - tasks/visual-studio-code.yml
