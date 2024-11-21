@@ -1,7 +1,7 @@
 ---
 - name: Ensure local maven repository exists.
   file:
-    path: "{{ lookup('env','HOME') }}/.m2"
+    path: "{{ lookup('env', 'HOME') }}/.m2"
     state: directory
 # TODO: Skip the sugarcrm-nexus username and password if that information is already in the file. But allow the rest of the file to be updated.
 - name: Capture sugarcrm-nexus username.
@@ -11,9 +11,9 @@
 - name: Capture sugarcrm-nexus password.
   pause:
     prompt: "Enter your sugarcrm-nexus password"
-    echo: no
+    echo: false
   register: maven_sugarcrm_nexus_password
 - name: Install maven settings.
   template:
     src: templates/maven-settings.xml.j2
-    dest: "{{ lookup('env','HOME') }}/.m2/settings.xml"
+    dest: "{{ lookup('env', 'HOME') }}/.m2/settings.xml"

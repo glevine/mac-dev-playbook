@@ -8,7 +8,7 @@
 - name: Link doit binary into PATH.
   file:
     src: "{{ doit_repo_local_destination }}/doit"
-    dest: "{{ lookup('env','HOME') }}/bin/doit"
+    dest: "{{ lookup('env', 'HOME') }}/bin/doit"
     state: link
     mode: 0755
   become: false

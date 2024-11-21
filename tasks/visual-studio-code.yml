@@ -30,9 +30,9 @@
     - zxh404.vscode-proto3
 - name: Ensure Visual Studio Code user directory exists.
   file:
-    path: "{{ lookup('env','HOME') }}/Library/Application Support/Code/User"
+    path: "{{ lookup('env', 'HOME') }}/Library/Application Support/Code/User"
     state: directory
 - name: Install Visual Studio Code user settings.
   copy:
     src: files/visual-studio-code/settings.json
-    dest: "{{ lookup('env','HOME') }}/Library/Application Support/Code/User/settings.json"
+    dest: "{{ lookup('env', 'HOME') }}/Library/Application Support/Code/User/settings.json"

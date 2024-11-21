@@ -1,7 +1,7 @@
 ---
 - name: Ensure ~/bin for user binaries.
   file:
-    path: "{{ lookup('env','HOME') }}/bin"
+    path: "{{ lookup('env', 'HOME') }}/bin"
     state: directory
     mode: 0755
     recurse: true
