@@ -76,7 +76,6 @@ homebrew_installed_packages:
 
 homebrew_taps:
   - devhubapp/devhub
-  - homebrew/command-not-found
   - superbrothers/zsh-kubectl-prompt
   - ykursadkaya/openlens
 
